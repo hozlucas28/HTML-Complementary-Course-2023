@@ -1,0 +1,38 @@
+<!-- ------------------------------------------------------------------------
+ * ATRIBUTOS GLOBALES:
+ *
+ * 	- <id> = Identificador único que se utiliza para seleccionar un elemento.
+ * 	- <class> = Se utiliza para dar estilos en CSS.
+ * 	- <title> = Atributo que ayuda a la accesibilidad, con una descripción del elemento.
+ * 	- <data-...> = Atributo personalizable que nos permite guardar valores.
+------------------------------------------------------------------------ --->
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Atributos</title>
+
+		<style>
+			.p-1 {
+				color: hsl(348, 83%, 47%);
+			}
+
+			#p-2 {
+				background-color: hsl(180, 100%, 27%);
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p-1">Clases</p>
+		<p id="p-2">Identificadores</p>
+		<p title="Este es un ejemplo de un atributo 'title'">Título con tooltip</p>
+		<p id="p-4" data-example="Datos de ejemplo">Datos pasados con la etiqueta</p>
+	</body>
+	<script>
+		const paragraph = document.getElementById('p-4');
+		console.log(paragraph.dataset.example);
+	</script>
+</html>
