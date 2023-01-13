@@ -1,0 +1,247 @@
+<!-- ------------------------------------------------------------------------
+ * ETIQUETAS DE FORMULARIO:
+ *
+ * 	- <form> = Inicializá el formulario.
+ * 	- <label> = Nombre del campo a rellenar. Debe poseer el atributo <for>
+ *				que indica el ID del <input> perteneciente al mismo.
+ * 	- <input> = Campo que le permite al usuario interactuar.
+ * 	- <option> = Define una opción disponible de la etiqueta <select>.
+ * 	- <button> = Botón que le permite al usuario enviar el formulario.
+ * 	- <select> = Crea una lista de opciones disponibles, de las cuales podemos
+ *				 elegir solamente una. Debe ir acompañada por la etiqueta <option>.
+ * 	- <optgroup> =  Agrupa etiquetas <option> relacionadas.
+ * 	- <textarea> = Permite introducir una cantidad considerable de texto.
+ * 	- <datalist> = Define sugerencias de búsqueda para los <input> de
+ *				   tipo lista.
+ * 	- <progress> = Muestra un progreso. Puede ir acompañado de los atributos
+ *				   <min> y <max>.
+ *	- <fieldset> = Permite agrupar un conjunto de campos relacionados.
+ *				   Puede ir acompañado de la etiqueta <legend> que se 
+ *				   utiliza para establecer un título al conjunto formado.
+ *
+ *
+ * ATRIBUTOS DE FORMULARIO:
+ *
+ * 	- <placeholder> = Le otorga al usuario una pista sobre que introducir en
+ *					  el <input>.
+ * 	- <required> = Vuelve al campo obligatorio.
+ * 	- <readonly> = Convierte al campo a modo: 'Solo de lectura'.
+ * 	- <min> = Establece un valor mínimo para un <input> de tipo numérico.
+ *	- <max> = Establece un valor máximo para un <input> de tipo numérico.
+ * 	- <minlenght> = Establece una cantidad mínima de caracteres para un <input>
+ *					de tipo texto.
+ * 	- <maxlenght> = Establece una cantidad máxima de caracteres para un <input>
+ *					de tipo texto.
+ * 	- <selected> = Equivale al atributo <checked>, pero en el caso de las etiquetas
+ *				   <option> de los <select>.
+ * 	- <disabled> = Inhabilitá la interacción con el campo.
+ * 	- <autofocus> = Auto enfoca el campo al cargar el formulario.
+ *
+ *
+ * TIPOS DE <INPUT>:
+ *
+ * 	- <url> = Se utiliza para introducir una dirección URL.
+ * 	- <tel> = Se utiliza para introducir números telefónicos.
+ * 	- <text> = Valor por defecto.
+ * 	- <file> = Permite cargar archivos.
+ * 	- <time> = Permite introducir una hora.
+ * 	- <date> = Permite introducir una fecha, únicamente.
+ * 	- <week> = Se utiliza para introducir el número de semana y un año.
+ * 	- <list> = Permite al usuario ingresar texto, y a la vez mostrarle sugerencias
+ *			   que coincidan con lo ingresado mediante la etiqueta <datalist>.
+ * 	- <color> = Permite introducir un color, únicamente.
+ * 	- <reset> = Se utiliza para reiniciar los campos del formulario.
+ * 	- <radio> = Permite seleccionar una única opción dentro de una lista.
+ * 	- <range> = Permite introducir un rango. Este tipo de input puede estar
+ *				acompañado de los atributos <start>, <end> y <step>.
+ * 	- <email> = Se utiliza para introducir un email.
+ * 	- <month> = Se utiliza para introducir un mes y un año.
+ * 	- <submit> = Permite enviar el formulario.
+ * 	- <search> = Se utiliza para las barras de búsqueda.
+ * 	- <number> = Permite introducir números, únicamente.
+ * 	- <hidden> = Oculta el campo.
+ * 	- <checkbox> = Permite seleccionar ó no la opción asociada.
+ * 	- <password> = Se utiliza para introducir una contraseña que es censurada.
+ *
+ *
+ * TIPOS DE METODOS DE ENVIO:
+ * 	- <GET> = Los campos son incluidos en la URL y enviados al servidor.
+ * 	- <POST> = Los campos son incluidos en el cuerpo de formulario y
+ *			   enviados al servidor.
+------------------------------------------------------------------------ --->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formularios</title>
+	</head>
+	<body>
+		<form method="">
+			<label for="name">Nombre</label>
+			<input id="name" />
+
+			<button>Enviar formulario</button>
+		</form>
+		<hr />
+
+		<form>
+			<input type="date" />
+
+			<input type="month" />
+
+			<input type="week" />
+
+			<input type="time" />
+
+			<div>
+				<label>
+					Buscar
+					<input type="search" />
+				</label>
+			</div>
+
+			<div>
+				<label>
+					Teléfono
+					<input type="tel" />
+				</label>
+			</div>
+
+			<div>
+				<label>
+					Email
+					<input type="email" />
+				</label>
+			</div>
+
+			<div>
+				<label>
+					Contraseña
+					<input type="password" />
+				</label>
+			</div>
+
+			<div>
+				<label>
+					URL
+					<input type="url" />
+				</label>
+			</div>
+		</form>
+		<hr />
+
+		<form>
+			<input type="color" />
+
+			<input type="number" />
+
+			<input type="range" start="0" start="10" step="2" />
+
+			<input type="reset" />
+
+			<input type="text" />
+		</form>
+		<hr />
+
+		<form>
+			<label>
+				Masculino
+				<input type="radio" name="gender" value="male" checked />
+			</label>
+
+			<label>
+				Femenino
+				<input type="radio" name="gender" value="female" />
+			</label>
+		</form>
+		<hr />
+
+		<form>
+			<label>
+				HTML
+				<input type="checkbox" name="languages" value="HTML" checked />
+			</label>
+
+			<label>
+				CSS
+				<input type="checkbox" name="languages" value="CSS" checked />
+			</label>
+
+			<label>
+				JS
+				<input type="checkbox" name="languages" value="JS" />
+			</label>
+		</form>
+		<hr />
+
+		<form>
+			<select name="lenguages">
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+				<option value="JS">JS</option>
+				<optgroup label="Ciudades">
+					<option value="city-arg">Argentina</option>
+					<option value="city-chi">Chile</option>
+					<option value="city-bra">Brasil</option>
+				</optgroup>
+			</select>
+		</form>
+		<hr />
+
+		<form>
+			<input type="list" list="pets" />
+			<datalist id="pets">
+				<option value="HTML"></option>
+				<option value="CSS"></option>
+				<option value="JS"></option>
+				<optgroup label="Ciudades">
+					<option value="city-arg"></option>
+					<option value="city-chi"></option>
+					<option value="city-bra"></option>
+				</optgroup>
+			</datalist>
+		</form>
+		<hr />
+
+		<form>
+			<fieldset>
+				<leyend>Datos personales</leyend>
+				<label for="name">Nombre</label>
+				<input type="text" id="name" />
+				<label for="lastName">Apellido</label>
+				<input type="text" id="lastName" />
+			</fieldset>
+
+			<input type="file" />
+
+			<label for="progress">Progreso</label>
+			<progress id="progress" max="100" value="75"></progress>
+
+			<label for="textArea">Progreso</label>
+			<textarea id="textArea" cols="30" rows="10"></textarea>
+		</form>
+		<hr />
+
+		<form>
+			<input type="text" value="Hola" placeholder="Introduce tu nombre" required />
+
+			<input type="text" value="Hola" readonly />
+
+			<input type="text" value="Hola" disabled />
+
+			<select name="numbers">
+				<option value="one">1</option>
+				<option value="two" selected>2</option>
+			</select>
+
+			<input type="number" min="5" max="10" autofocus />
+
+			<input type="text" minlength="3" maxlength="5" required />
+
+			<input type="submit" />
+		</form>
+	</body>
+</html>

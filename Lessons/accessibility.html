@@ -1,0 +1,25 @@
+<!-- ------------------------------------------------------------------------
+ * ATRIBUTOS DE ACCESIBILIDAD EXISTENTES:
+ *
+ * 	- <role> = Indica cual es la función de la etiqueta.
+ * 	- <tabindex> = Le permite al usuario acceder a las etiquetas que posean
+ *				   este atributo, mediante la tecla: Tab.
+ * 	- <aria-label> = Otorga información para los lectores de pantalla, los
+ *					 mismo lo leerán.
+------------------------------------------------------------------------ --->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Accesibilidad</title>
+	</head>
+	<body>
+		<p tabindex="1">Párrafo 1</p>
+		<p tabindex="2">Párrafo 2</p>
+		<p tabindex="3">Párrafo 3</p>
+		<a href="https://www.google.com.ar/" role="link" aria-label="Redirigirme a www.google.com.ar">Ir a Google</a>
+	</body>
+</html>

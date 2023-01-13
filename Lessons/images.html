@@ -1,0 +1,45 @@
+<!-- ------------------------------------------------------------------------
+ * APUNTES:
+ * 		   Se recomienda que las imágenes sean de tipo SVG o WEBP, en su
+ *		   defecto.
+ *
+ *
+ * IMPORTANTE:
+ *  			  - Si al definir una imagen esta tiene los atributos <src>
+ *					y <srcset> la misma tratara de cargar la definida en
+ *					<srcset>, pero en caso de no lograrlo cargara la del <src>.
+ *  			  - <picture> = Me permite establecer que imagen se cargara,
+ *								según el ancho de la pantalla. Esta etiqueta
+ *								va acompañada de las etiquetas <source> y <img>.
+------------------------------------------------------------------------ --->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Imágenes</title>
+
+		<style>
+			img {
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="./assets/images/dog.png" alt="Perro" />
+		<img src="./assets/images/dog.webp" alt="Perro" />
+		<img src="./assets/images/facebook-logo.svg" alt="" />
+		<hr />
+
+		<img src="./assets/images/cat.jpeg" srcset="./assets/images/cat.webp" alt="" />
+		<hr />
+
+		<picture>
+			<!-- En caso de no soportar webp y/o srcset usa la imagen con formato JPEG -->
+			<source srcset="./assets/images/dog-mobile.webp, ./assets/images/dog-mobile.png" media="(max-width:640px)" />
+			<img src="./assets/images/dog.png" alt="" />
+		</picture>
+	</body>
+</html>

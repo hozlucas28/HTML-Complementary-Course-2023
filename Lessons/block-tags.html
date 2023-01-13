@@ -1,0 +1,86 @@
+<!-- ------------------------------------------------------------------------
+ * ETIQUETAS DE BLOQUE EXISTENTES:
+ *
+ * 	- <q> = Cumple la misma función que la etiquetas <blockquote>, pero se
+ *			trata de una etiqueta de línea.
+ * 	- <hr> = Agrega una línea divisora, que le indica al navegador que vamos
+ *			 a cambiar de tema.
+ * 	- <pre> = Muestra el contenido tal como fue escrito.
+ * 	- <div> = Divide al documento agrupando contenido relacionado,
+ *			  semánticamente no significá nada.
+ * 	- <span> = Se utiliza para pequeños fragmentos del documento, como
+ *			   palabras/oraciones, que queremos referenciar en CSS o JS,
+ *			   semánticamente no significá nada.
+ * 	- <code> = Encierra código, suele ir acompañado con la etiqueta <pre>.
+ * 	- <address> = Aporta información de contacto.
+ * 	- <blockquote> = Se utiliza para marcar bloques con citas de
+ *                   autores/documentos. Al mismo se le puede acompañar
+ *					 con el atributo <cite>, que otorga un enlace al autor/documento.
+------------------------------------------------------------------------ --->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etiquetas de Bloque</title>
+
+		<style>
+			span {
+				color: hsl(0, 100%, 50%);
+			}
+		</style>
+	</head>
+	<body>
+		<address>
+			Tony Stark
+			<br />
+			Malibú 10880
+			<br />
+			90265
+			<br />
+			California
+		</address>
+		<hr />
+
+		<blockquote cite="https://www.entrepreneur.com/article/312598">
+			<p>
+				Hay cosas que nunca le preguntare a mi padre. Hay preguntas que me hubiera gustado hacerle: cómo se sentia por lo que
+				hacia su empresa, si estaba conflictuado, si tenia dudas (...). Vi a jóvenes estadounidenses ser asesinados por las
+				armas que creaba para defenderlos y protegerlos. Me di cuenta que era parte de un sistema que no rinde cuentas.
+			</p>
+		</blockquote>
+		<hr />
+
+		<pre>
+                        ¡Hola
+                Mundo!
+        </pre
+		>
+		<hr />
+
+		<div>
+			<h2>Nombre</h2>
+			<p>Email</p>
+			<p>Descripción</p>
+		</div>
+		<hr />
+
+		<p>
+			Lorem ipsum dolor sit amet consectetur, <span>adipisicing elit</span>. Neque aut minima, nostrum ab id adipisci
+			recusandae sapiente ea soluta praesentium doloribus quod repellendus iste odio quisquam? Veritatis sed maiores saepe!
+		</p>
+		<hr />
+
+		<q cite="">Yo soy Iron Man</q>
+		<hr />
+
+		<code>
+			<pre>
+                console.log('¡Hola Mundo!')
+            </pre
+			>
+		</code>
+	</body>
+</html>
