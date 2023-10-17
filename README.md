@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88015479/211630242-801f83dc-a106-436f-aa29-30cf052381d4.png" width="500">
+    <img src="./.github/html-logo.png" width="500">
 </p>
 
 <h2>
